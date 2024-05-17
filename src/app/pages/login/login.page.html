@@ -1,0 +1,34 @@
+
+<ion-content [fullscreen]="true">
+  <div>
+    <ion-title class="title">
+      Bienvenido
+    </ion-title>
+    <p class="subTitle">Inicio de sesion</p>
+  </div>
+
+  <form>
+    <div class="ion-padding">
+      <ion-item>
+        <ion-input placeholder="username" class="input"></ion-input>
+        <ion-icon name="person-outline"></ion-icon>
+      </ion-item>
+      <ion-item>
+        <ion-input placeholder="password" class="input"></ion-input>
+        <ion-icon name="lock-closed-outline"></ion-icon>
+      </ion-item>
+      <div class="forgotpassword">
+        <a [routerLink]="['/reset-password']" style="color: #FFC33F;"> Recuperar contraseña</a>
+      </div>
+      <div class="signupLink">
+        <p>Nueva cuenta?<a [routerLink]="['/signup']" style="color: #FFC33F;">Registrarse</a></p>
+      </div>
+    </div>
+    <ion-fab vertical="bottom" horizontal="end" style="margin-bottom: 30px;">
+      <ion-fab-button [routerLink]="['/home']">
+        <ion-icon name="chevron-forward"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+  </form>
+
+</ion-content>
